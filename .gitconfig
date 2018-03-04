@@ -1,0 +1,14 @@
+[user]
+	name = Justin Dang
+	email = justin@justind.me
+[alias]
+	dad = !curl https://icanhazdadjoke.com/ && git add
+[core]
+	editor = vim
+	excludesfile = /Users/justindang/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
