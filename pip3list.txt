@@ -51,6 +51,7 @@ MarkupSafe         1.0
 matplotlib         2.0.2      
 mccabe             0.6.1      
 mistune            0.8.3      
+mpmath             1.0.0      
 nbconvert          5.3.1      
 nbformat           4.4.0      
 networkx           2.0        
@@ -104,12 +105,14 @@ Send2Trash         1.4.2
 setuptools         28.8.0     
 Shapely            1.6.4.post1
 simplegeneric      0.8.1      
+simpy              3.0.10     
 six                1.11.0     
 sortedcontainers   1.5.9      
 spark-parser       1.6.1      
 SQLAlchemy         1.2.2      
 Stegano            0.8.1      
 stevedore          1.28.0     
+sympy              1.1.1      
 terminado          0.8.1      
 testpath           0.3.1      
 tornado            4.5.3      
