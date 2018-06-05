@@ -7,7 +7,7 @@ export ZSH=/Users/justindang/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="michelebologna"
+ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -91,6 +91,9 @@ alias wow='git status'
 alias such='git'
 alias very='git'
 alias hack='cmatrix'
+alias radare='radare2'
+alias gcc='gcc-7'
+alias uc='unixcommand'
 
 eval $(thefuck --alias fuck)
 eval $(thefuck --alias)
@@ -106,4 +109,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 mkcd () {
     mkdir "$1"
     cd "$1"
+}
+
+kali () {
+    VboxManage startvm "Kali Linux" --type headless
+    sleep 20
+    ssh kali
+    VBoxManage controlvm "Kali Linux" acpipowerbutton
 }
