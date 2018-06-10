@@ -113,7 +113,21 @@ mkcd () {
 
 kali () {
     VboxManage startvm "Kali Linux" --type headless
-    sleep 20
+    echo "Initialising Kali: |▆▆▆-----------------------------------| (10%)\r\c"
+    sleep 2
+    echo "Initialising Kali: |▆▆▆▆▆▆▆-------------------------------| (20%)\r\c"
+    sleep 5
+    echo "Initialising Kali: |▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆-----------------| (55%)\r\c"
+    sleep 4
+    echo "Initialising Kali: |▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆-----------| (70%)\r\c"
+    sleep 7
+    echo "Initialising Kali: |▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆----| (95%)\r\c"
+    sleep 1
+    echo "Initialising Kali: |▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆-| (100%)\r\c"
+    sleep 0.5
+    echo "                                                                  \r\c"
+    echo "KALI VM STARTED\r\c"
+    sleep 0.5
     ssh kali
     VBoxManage controlvm "Kali Linux" acpipowerbutton
 }
