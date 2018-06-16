@@ -131,3 +131,4 @@ kali () {
     ssh kali
     VBoxManage controlvm "Kali Linux" acpipowerbutton
 }
+
