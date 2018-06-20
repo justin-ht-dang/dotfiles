@@ -42,3 +42,10 @@ let g:syntastic_check_on_wq = 0
 
 " write to file with sudo
 cmap w!! w !sudo tee %
+
+" distraction free mode
+call plug#begin()
+Plug 'junegunn/goyo.vim'
+call plug#end()
+
+cmap goyo Goyo
