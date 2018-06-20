@@ -1,13 +1,18 @@
 execute pathogen#infect()
-set number                  " enable line number 
 set mouse=a                 " enable mouse in all mode
 syntax enable               " syntax highlighting
 set wildmenu                " visual autocomplete for command menu
 set showmatch		        " show matching parentheses
+set backspace=indent,eol,start
 
+set number                  " enable line number 
 set ruler                   " indicate row and col number
-set colorcolumn=80,120      " highlight column 
-highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
+set colorcolumn=80,120      " highlight column
+highlight ColorColumn ctermbg=darkgray guibg=darkgrey
+
+" cursor
+let &t_SI = '\<Esc>]50;CursorShape=1\x7' " Vertical bar in insert mode
+" let &t_EI = '\<Esc>]50;CursorShape=0\x7' " Block in normal mode
 
 " indentation and tab
 set expandtab		        " tabs expand to spaces
