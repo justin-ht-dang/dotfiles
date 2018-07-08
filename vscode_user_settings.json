@@ -3,7 +3,6 @@
 
     "telemetry.enableTelemetry": false,
     "editor.fontSize": 12,
-    "workbench.colorTheme": "Tomorrow Night Blue",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0,
@@ -16,5 +15,6 @@
     ],
     "vsicons.dontShowNewVersionMessage": true,
     "python.pythonPath": "/usr/local/bin/python3",
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "workbench.colorTheme": "Tomorrow Night Blue"
 }
