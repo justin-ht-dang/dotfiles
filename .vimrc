@@ -1,3 +1,4 @@
+filetype plugin on
 execute pathogen#infect()
 set mouse=a                     " enable mouse in all mode
 syntax enable                   " syntax highlighting
@@ -65,12 +66,15 @@ Plug 'junegunn/goyo.vim'
 Plug 'haishanh/night-owl.vim'
 Plug 'scwood/vim-hybrid'
 Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " colorscheme night-owl
 " colorscheme hybrid
 " colorscheme darkidle
 " colorscheme citylights
+
+set background=dark
 colorscheme solarized8_flat
 cmap goyo Goyo
 

@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/justindang/.oh-my-zsh
+export ZSH=/home/justin/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -51,7 +51,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew npm)
+plugins=(git npm zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,17 +92,12 @@ alias such='git'
 alias very='git'
 alias hack='cmatrix'
 alias radare='radare2'
-alias gcc='gcc-7'
-alias uc='unixcommand'
+alias open='xdg-open'
+alias lock='betterlockscreen -l'
 
-eval $(thefuck --alias fuck)
-eval $(thefuck --alias)
+# source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
-
-
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-. `brew --prefix`/etc/profile.d/z.sh
+. ~/.local/z.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -111,27 +106,4 @@ mkcd () {
     cd "$1"
 }
 
-kali () {
-    VboxManage startvm "Kali Linux" --type headless
-    echo "Initialising Kali: |▆▆▆-----------------------------------| (10%)\r\c"
-    sleep 2
-    echo "Initialising Kali: |▆▆▆▆▆▆▆-------------------------------| (20%)\r\c"
-    sleep 5
-    echo "Initialising Kali: |▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆-----------------| (55%)\r\c"
-    sleep 4
-    echo "Initialising Kali: |▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆-----------| (70%)\r\c"
-    sleep 7
-    echo "Initialising Kali: |▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆----| (95%)\r\c"
-    sleep 1
-    echo "Initialising Kali: |▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆-| (100%)\r\c"
-    sleep 0.5
-    echo "                                                                  \r\c"
-    echo "KALI VM STARTED\r\c"
-    sleep 0.5
-    ssh kali
-    VBoxManage controlvm "Kali Linux" acpipowerbutton
-}
-
-# Iterm2: change profile from CLI
-it2prof() { echo -e "\033]50;SetProfile=$1\a" }
-
+eval $(dircolors ~/.dircolors)
