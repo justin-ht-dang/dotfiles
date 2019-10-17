@@ -94,6 +94,8 @@ alias hack='cmatrix'
 alias radare='radare2'
 alias open='xdg-open'
 alias lock='betterlockscreen -l'
+alias -r gl="/usr/bin/git log --date-order --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias fuck='sudo $(fc -ln -1)'
 
 # source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
